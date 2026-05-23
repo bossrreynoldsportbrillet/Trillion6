@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "TRILLIONS OMEGA V12",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.js",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "restart": true,
+      "runtimeExecutable": "node",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "TRILLIONS_MODE": "OMEGA_V12",
+        "REALITY_LOCK": "true",
+        "REAL_ONLY_OR_UNAVAILABLE": "true"
+      }
+    },
+
+    {
+      "name": "TRILLIONS ATTACH",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "restart": true,
+      "protocol": "inspector"
+    }
+
+  ]
+}
